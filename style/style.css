@@ -1,0 +1,209 @@
+/* Import cluster */
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+
+/* Start cleanup and defenition */
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #eee;
+	font-family: 'Alef Hebrew', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.container {
+	position: absolute;
+	width: 800px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* Work with free star */
+#free-star {
+	position: absolute;
+	background: red;
+	color: #fff;
+	font-size: 50px;
+	font-weight: bold;
+	bottom: 7.5%;
+	left: 5%;
+	width: 120px;
+	height: 120px;
+	text-align: center;
+	transform: rotate(20deg);
+}
+
+#free-star h5 {
+	margin: 0;
+	padding-top: 30px;
+}
+
+#free-star:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 120px;
+	width: 120px;
+	background: red;
+	z-index: -1;
+	transform: rotate(135deg);
+}
+
+/* Work with pole design */
+.blank-item {
+	height: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.blank-item-pole {
+	width: 20px;
+	height: 100px;
+	transform: translateY(-35%);
+	flex: 1;
+}
+
+.blank-item-blank-1 {
+	flex: 40;
+}
+
+.blank-item-blank-2 {
+	flex: 2;
+}
+
+.blank-item-blank-3 {
+	flex: 4;
+}
+
+.middle-pole {
+	background: linear-gradient(#9c4e16, #592d0d);
+	box-shadow: 6px 1px 8px rgba(0, 0, 0, 0.3);
+	border-radius: 20px;
+	width: 20px;
+	height: inherit;
+}
+
+.hole {
+	background-color: #404040;
+	opacity: 0.5;
+	position: absolute;
+	border-radius: 100%;
+	width: 25px;
+	height: 25px;
+}
+
+.hole-1 {
+	top: 0;
+	z-index: -1;
+	transform: translate(2.5px, -2.5px);
+	float: left;
+}
+
+.hole-2 {
+	bottom: 0;
+	z-index: -1;
+	transform: translate(2.5px, 2.5px);
+	float: right;
+}
+
+/* Work with card */
+.card {
+	border-radius: 20px;
+	height: 240px;
+	overflow: auto;
+	background-color: #fff;
+	box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-1 {
+	background: linear-gradient(to right, #588ebb, #4682b4);
+	color: #eee;
+}
+
+.card-1 ul {
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 13px;
+	margin-right: 40px;
+}
+
+.picture {
+	float: left;
+	height: 240px;
+	width: 240px;
+}
+
+img {
+	height: 150px;
+	display: block;
+	margin: 30px auto;
+}
+
+.card-side {
+	float: right;
+	width: 200px;
+	height: inherit;
+	background-color: green;
+	background: linear-gradient(to right, #588ebb, #4682b4);
+}
+
+.card-2-side {
+	float: right;
+}
+
+.card-3-side {
+	float: left;
+}
+
+ul {
+	list-style: none;
+}
+
+.card-2 ul {
+	margin: 20px 200px;
+}
+
+.card-3 ul {
+	margin: 70px 20px;
+}
+
+.card-2 li:before,
+.card-3 li:before {
+	content: '';
+	display: inline-block;
+	margin-left: 10px;
+	height: 18px;
+	width: 18px;
+	background-image: url('../img/checkmark.png');
+	background-size: 18px 18px;
+	transform: translate(2px, 2.5px);
+}
+
+.card-3 li:before {
+	background-image: url('../img/exclamationmark.png');
+}
+
+h1,
+h3,
+h4 {
+	color: #eee;
+	margin: 5px 40px 0 0;
+}
+
+h1 {
+	margin-bottom: 0;
+}
+
+#middle {
+	margin-top: 0;
+	margin-top: 0;
+}
+
+#bold-1 {
+	font-weight: bold;
+}
